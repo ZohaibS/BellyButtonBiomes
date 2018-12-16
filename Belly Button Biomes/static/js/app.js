@@ -1,6 +1,6 @@
 function buildMetadata(sample) {
     
-    d3.json(`/metadata/{sample}`).then((data) => {
+    d3.json(`/metadata/${sample}`).then((data) => {
         var ourPanel = d3.select("#sample-metadata");
 
         // Clearing existing metadata.
